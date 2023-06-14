@@ -1,0 +1,127 @@
+.navbar{
+    height: auto;
+    background-color: black;
+}
+.carousel-inner{
+    height: 50% ;
+}
+.bg-dark{
+    background-color: black;
+}
+body{
+    background-color: black;
+}
+
+.subscribe{
+    border-radius: 30px;
+    color:gold;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar-nav > li{
+    padding-left:5px;
+    padding-right:5px;
+  }
+
+.foryou{
+    color:beige;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 48px;
+}
+
+.foryou:hover{
+    color: black;
+    background-color: beige;
+}
+
+.nav-heading{
+    font-weight: 500;
+    color: azure;
+}
+
+.ms-n5 {
+    margin-left: -34px;
+}
+
+.car-child{
+    float: left;
+    height: 100%;
+}
+
+.car-1{
+    width: 40%;
+    background-color:black;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.car-2{
+    width: 60%;
+    max-height: 100%;
+}
+
+.title{
+    font-weight: bold;
+    color: white;
+    font-size:xx-large;
+}
+.desc{
+    color: antiquewhite;
+    font-size: small;
+}
+.watch{
+    background-color: fuchsia;
+    color: white;
+}
+
+.car-caption{
+    margin-left: 25%;
+    width: 75%;
+    height: 50%;
+}
+.carousel-item{
+    height:50%;
+}
+.card{
+    float:left;
+    margin: 10px;
+    border-style: solid;
+    border-color: black;
+    width: 15%;
+    position:relative;
+    
+}
+
+.trending{
+    color:white;
+    margin-left: 2%;
+    width: 90%;
+    float:left;
+}
+
+.next{
+    font-weight: bold;
+    color: white;
+    margin-right: 0px;
+    float:left;
+    font-size: 30px;
+}
+
+.car-trending{
+    margin-left: 15px;
+}
+
+.number{
+    position: absolute;
+    margin-top:110px;
+    right: 5px;
+    color: white;
+    font-size:800%;
+    font-weight: bold;
+    opacity: 0.8;
+}

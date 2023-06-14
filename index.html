@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JioCinema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        JioCinema
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-warning subscribe btn-lg" role="button" aria-current="page"
+              href="#">Subscribe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn foryou" role="button" href="#">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-heading" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-heading" href="#">Free</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-heading" href="#">Premium</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <input class="form-control border-end-0 border rounded-pill" type="search" value="search"
+              id="example-search-input">
+            <span class="input-group-append">
+              <button class="btn btn-dark border-bottom-0 border rounded-pill ms-n5" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="car-child car-1">
+          <div class="car-caption">
+            <h1 class="title">Bloody Daddy</h1>
+            <p class="desc">Hindi Action U/A 16+</p>
+            <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
+          </div>
+        </div>
+        <div class="car-child car-2">
+          <img
+            src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/bloody-daddy-tv-1686474748855.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="car-child car-1">
+          <div class="car-caption">
+            <h1 class="title">MTV Roadies</h1>
+            <p class="desc">Hindi Reality U/A 16+</p>
+            <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
+          </div>
+        </div>
+        <div class="car-child car-2">
+          <img
+            src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/16x9-jc-1686408854873.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="car-child car-1">
+          <div class="car-caption">
+            <h1 class="title">Puss in Boots: The Last Wish</h1>
+            <p class="desc">Englidh Animation U/A 7+</p>
+            <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
+          </div>
+        </div>
+        <div class="car-child car-2">
+          <img
+            src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/puss-in-boots-the-last-wish-16x9-1685358451380.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div>
+    <div class="trending">
+      <h3><b>Trending In India</b></h3>
+    </div>
+    <div><button class="next btn border-0" href="">></button></div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner car-trending">
+      <div class="carousel-item active">
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/asur-2_launch-3x4-1686131349237.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">1</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/bhediya-3x4-3clean-1685086846593.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">2</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/blooddaddy-withoutlable-3x4-1686245237507.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">3</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/up65-3x4-1686248307699.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">4</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/3x4-rhea-1686409637943.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">5</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/s6sexandthecity3x4-1684389647826.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">6</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/tillsaking_show_new-series_3x4-1683921514287.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">8</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/vv-3x4-1684307024256.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">9</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/mumbaikar-3x4-1685961152712.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">10</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/got_3_4-1683938784910.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">11</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
