@@ -11,12 +11,12 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <nav class="navbar sticky-top navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
@@ -70,45 +70,39 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="car-child car-1">
+        <div class="car-child">
           <div class="car-caption">
             <h1 class="title">Bloody Daddy</h1>
             <p class="desc">Hindi Action U/A 16+</p>
             <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
           </div>
-        </div>
-        <div class="car-child car-2">
           <img
             src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/bloody-daddy-tv-1686474748855.jpg?imformat=chrome"
-            class="d-block w-100" alt="...">
+            alt="...">
         </div>
       </div>
       <div class="carousel-item">
-        <div class="car-child car-1">
+        <div class="car-child">
           <div class="car-caption">
             <h1 class="title">MTV Roadies</h1>
             <p class="desc">Hindi Reality U/A 16+</p>
             <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
           </div>
-        </div>
-        <div class="car-child car-2">
           <img
             src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/16x9-jc-1686408854873.jpg?imformat=chrome"
-            class="d-block w-100" alt="...">
+            alt="...">
         </div>
       </div>
       <div class="carousel-item">
-        <div class="car-child car-1">
+        <div class="car-child">
           <div class="car-caption">
             <h1 class="title">Puss in Boots: The Last Wish</h1>
             <p class="desc">Englidh Animation U/A 7+</p>
             <button type="button" class=" btn watch btn-lg"><b>▷ Watch</b></button>
           </div>
-        </div>
-        <div class="car-child car-2">
           <img
             src="https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/puss-in-boots-the-last-wish-16x9-1685358451380.jpg?imformat=chrome"
-            class="d-block w-100" alt="...">
+            alt="...">
         </div>
       </div>
     </div>
@@ -121,13 +115,85 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div>
-    <div class="trending">
-      <h3><b>Trending In India</b></h3>
-    </div>
+  <!-- <div class="trending">
+    <div class="trending-text"> -->
+      <h3 class="trending"><b>Trending In India</b></h3>
+    <!-- </div>
     <div><button class="next btn border-0" href="">></button></div>
+  </div> -->
+  <div class="movies-list">
+    <span class="pre-btn carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="nxt-btn carousel-control-next-icon" aria-hidden="true"></span>
+    <div class="card-container">
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/asur-2_launch-3x4-1686131349237.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">1</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/bhediya-3x4-3clean-1685086846593.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">2</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/blooddaddy-withoutlable-3x4-1686245237507.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">3</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/up65-3x4-1686248307699.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">4</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/3x4-rhea-1686409637943.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">5</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/s6sexandthecity3x4-1684389647826.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">6</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">7</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/tillsaking_show_new-series_3x4-1683921514287.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">8</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/vv-3x4-1684307024256.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">9</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/mumbaikar-3x4-1685961152712.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">10</h1>
+        </div>
+      </div>
+      <div class="card-trending">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/got_3_4-1683938784910.jpg?imformat=chrome" class="card-img" alt="...">
+        <div class="card-body">
+          <h1 class="number">11</h1>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner car-trending">
       <div class="carousel-item active">
         <div class="card col-lg-2"><img
@@ -198,6 +264,53 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div class="autoplay">
+      <div class="card col-lg-2"><img
+          src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+          class="d-block w-100" alt="...">
+        <h1 class="number">7</h1>
+      </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+        <div class="card col-lg-2"><img
+            src="https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspector-avinash-3x4-1685015257428.jpg?imformat=chrome"
+            class="d-block w-100" alt="...">
+          <h1 class="number">7</h1>
+        </div>
+  </div>     -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -205,7 +318,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
-
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="index.js"></script>
 
 </body>
 

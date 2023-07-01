@@ -1,16 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    
+}
+
 .navbar{
     height: auto;
     background-color: black;
 }
-.carousel-inner{
+/* .carousel-inner{
     height: 50% ;
-}
+} */
 .bg-dark{
     background-color: black;
 }
-body{
-    background-color: black;
-}
+
 
 .subscribe{
     border-radius: 30px;
@@ -49,44 +60,79 @@ body{
     margin-left: -34px;
 }
 
-.car-child{
-    float: left;
+/* carouse */
+
+.carousel{
+    width: 97%;
     height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
 }
 
-.car-1{
-    width: 40%;
-    background-color:black;
-    padding-top: 200px;
-    padding-bottom: 50px;
+.carousel-control-prev,
+.carouse-control-next{
+    width: 10%;
+    z-index: 5;
 }
-.car-2{
-    width: 60%;
-    max-height: 100%;
+
+.car-child{
+    /* float: left; */
+    /* height: 100%; */
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    background-color:black;
+    width: 100%;
+    height: 100%;
+    left:0;
+
+}
+
+.car-child img{
+    width:60%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.car-caption{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, black 80%, rgba(255, 255, 255, 0));
+    color: white;
+    border: none;
 }
 
 .title{
     font-weight: bold;
     color: white;
     font-size:xx-large;
+    margin-left: 20%;
+    padding-top: 30%;
+    padding-right: 15%;
 }
 .desc{
     color: antiquewhite;
     font-size: small;
+    margin-left: 20%;
 }
 .watch{
     background-color: fuchsia;
     color: white;
+    margin-left: 20%;
 }
 
-.car-caption{
-    margin-left: 25%;
-    width: 75%;
-    height: 50%;
+.watch:hover{
+    border-color:fuchsia;
+    border-width: 2px;
 }
-.carousel-item{
-    height:50%;
-}
+
+/* trending section */
+
 .card{
     float:left;
     margin: 10px;
@@ -100,7 +146,6 @@ body{
 .trending{
     color:white;
     margin-left: 2%;
-    width: 90%;
     float:left;
 }
 
@@ -112,16 +157,91 @@ body{
     font-size: 30px;
 }
 
-.car-trending{
-    margin-left: 15px;
+.movies-list{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin: 10px 0px 10px;
+}
+
+.card-container{
+    position: relative;
+    width: 97%;
+    padding-left: 10px;
+    height: 250px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card-trending{
+    position: relative;
+    min-width: 170px;
+    width: 170px;
+    height: 220px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    padding: 10px;
+    transition: 0.5s;
 }
 
 .number{
-    position: absolute;
-    margin-top:110px;
-    right: 5px;
+    position: absolute; 
     color: white;
-    font-size:800%;
+    font-size:800%; 
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.8;   
+    right: 4px;
+    padding-top: 37%;
+} 
+
+.pre-btn,
+.nxt-btn{
+    position: absolute;
+    top: 10%;
+    width: 2%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
 }
+
+.pre-btn{
+    left: 0;
+    /* background: linear-gradient(to right, black 0%,black); */
+}
+.nxt-btn{
+    right: 0;
+    /* background: linear-gradient(to left, black 0%,black); */
+}
+
+.pre-btn:hover,
+.nxt-btn:hover{
+    opacity: 1;
+} 
